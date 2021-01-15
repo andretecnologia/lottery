@@ -1,0 +1,20 @@
+server:
+  port : 8080
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+springdoc:
+  version: 1.5.1
+  api-docs:
+    path: /api-documentation
+  swagger-ui:
+    path: /documentation
